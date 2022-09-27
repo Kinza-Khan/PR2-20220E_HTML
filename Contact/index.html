@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Home/img/Coffee-logo-design-on-transparent-background-PNG.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fbf14cd96.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill"
+        viewBox="0 0 16 16">
+        <path
+            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+    </svg>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="../Home/img/Coffee-logo-design-on-transparent-background-PNG.png" alt="" class="coffee-logo"
+                    height="90px">
+                <h1><a href="../Home/Index.html" class="coffe-house"><span class="coffe">Coffee </span>House</a></h1>
+            </div>
+            <div class="navbar">
+                <ul class="ul-nav">
+                    <li class="li-nav"><a href="../Index.html" class="coffee-nav">Home</a></li>
+                    <li class="li-nav"><a href="../Shop/index.html" class="coffee-nav">Shop</a></li>
+                    <li class="li-nav"><a href="../About/index.html" class="coffee-nav">About</a></li>
+                    <li class="li-nav"><a href="../Contact/index.html" class="coffee-nav">Contact</a></li>
+                    <li class="li-nav"><a href="../Faq/index.html" class="coffee-nav">Faq</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-text" style="text-align: center;">
+                <h1 style="font-size: 5rem;margin-top: 100px;color: white;">Contact</h1>
+            </div>
+            <div class="form" id="content" style="display: flex; justify-content: center;">
+                <form>
+                    <div class="a" style="display: flex;">
+                       
+                    <input type="text" class="search first-name" placeholder="First Name" id="firstname"> <br> <br>
+                    <span id="error" style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 1rem; font-weight: bold; margin-left: 20px;"></span>
+                    <input type="text" class="search last-name" placeholder="Last Name" id="lastname">
+                    <br>
+                    <span id="error1" style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 1rem; font-weight: bold; margin-left: 20px;"></span>
+                </div>
+                   <div class="b" style="display: flex;">
+                    <input type="email" class="search email" placeholder="Email Adress">
+                    <input type="text" class="search number" placeholder="Phone Number">  </div>
+                    <textarea name="Feedback" id="feedback" cols="30" rows="10" placeholder="Feedback"></textarea>
+              
+                </form>
+            </div>
+            <div class="output" id="output">
+                <div class="reture">
+                    <img class="check"
+                        src="img/kisspng-check-mark-scalable-vector-graphics-transparency-c-check-mark-circle-icon-transparent-png-svg-vec-5c7ebd4d2411c7.3437852715518098691478.png"
+                        alt="" height="200px">
+                    <h1 class="text">Thanks For Your Feedback</h1>
+                    <h1 class="text"><span id="userfirst"></span><span id="usersecond"></span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="btn" style="display: flex; justify-content: center;">
+            <input type="submit" value="Submit" class="sub-btn" onclick="sub()">
+        </div>
+        <footer>
+            <div class="footer">
+                <p class="copyright">Copyright © 1999-2022 Coffee House is a project by Coffee House Abdul Sami. User
+                    Sitemap | Privacy Policy</p>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        function sub() {
+    var first = document.getElementById("firstname").value;
+    var last = document.getElementById("lastname").value;
+    // document.getElementById("userfirst").innerHTML = first += " ";
+    // document.getElementById("usersecond").innerHTML = last;
+    if(first == "" && last == ""){
+        document.getElementById("error").innerHTML= "Please enter your First and Last Name";
+        document.getElementById("error1").innerHTML= "Please enter your First and Last Name";
+        document.getElementById("firstname").style.border='red 3px solid';
+        document.getElementById("lastname").style.border='red 3px solid';
+    }
+    else if (first == "" && last != ""){
+        document.getElementById("error").innerHTML= "Please enter your First Name";
+        document.getElementById("firstname").style.border='red 3px solid';
+        document.getElementById("lastname").style.border='black 0px solid';
+
+    }
+    else if (last == "" && first != ""){
+        document.getElementById("error").innerHTML= "Please enter your Last Name";
+        document.getElementById("firstname").style.border='black 0px solid';
+        document.getElementById("lastname").style.border='red 3px solid';
+
+    }
+    else if (first != "" && last != "") {
+        document.getElementById("content").style.display = 'none';
+        document.getElementById("output").style.display = 'flex';
+    }
+}
+    </script>
+</body>
+
+</html>

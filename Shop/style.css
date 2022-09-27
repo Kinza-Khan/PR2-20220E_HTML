@@ -1,0 +1,166 @@
+*{
+    font-family: 'Oswald', sans-serif;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../Home/img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    
+}
+.nav{
+    background-color: rgba(179, 179, 179, 0.589);
+    max-width: 100%;
+    border-radius: 100px;
+}
+.logo {
+    margin-left: 55px;
+    display: flex;
+}
+.coffe{
+    color: #532202;
+    /* font-weight: bold; */
+}
+.coffe-house{
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(250, 250, 250);
+}
+.ul-nav{
+    margin-top: -135px;
+    display: flex;
+    margin-right: 55px;
+    list-style-type: none;
+    float: right;
+}
+.li-nav{
+    margin: 55px;
+}
+.coffee-nav{
+    padding-top: -36px;
+    color: rgb(250, 250, 250);
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.coffee-nav:hover{
+    color: #532202;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-bottom: 3px solid #532202;
+    /* background-color: #532202; */
+    
+}
+.coffee-nav:active{
+    border-bottom: 3px solid #532202;
+    color: #532202;
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown{
+    
+    margin-top: 36px;
+}
+.li-nav:hover .dropdown-menu{
+    transition: all 0.5s ease;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    transition: all 0.5s ease;
+    background-color: rgba(179, 179, 179, 0.589);
+}
+.li-nav:hover .dropdown-ul{
+    display: block;
+    margin-top: 36px;
+    list-style-type: none;
+    padding-right: 30px;
+    display: inline;
+}
+.li-nav:hover .dropdown-li{
+    padding: 40px;
+    width: 140px;
+}
+.li-nav:hover .dropdown-a{
+    color: rgb(250, 250, 250);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.r1{
+    display: flex;
+    flex-grow: 10;
+}
+.shop{
+display: flex;
+justify-content: center;
+}
+#shop{
+    text-align: center;
+}
+.shop-text{
+    font-size: 5rem;
+    margin-top: 100px;
+    color: white;
+}
+.main-card{
+    margin-top: 80px;
+    justify-content: center;
+    width: 1500px;
+    height: 1000px;
+    background-color: rgba(179, 179, 179, 0.589);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.card:hover{
+    box-shadow: 0px 0px 30px 0px black;
+}
+.card{
+border: 1px solid black;
+background-color: rgba(179, 179, 179, 0.589);
+width: 300px;
+height: 350px;
+}
+.product{
+    height: 240px;
+    border-bottom: 2px solid black;
+}
+.product-name{
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+.price{
+    height: 45px;
+    font-size: 0.2rem;
+    text-align: center;
+
+}
+.name{
+    text-align: center;
+    color: #532202;
+}
+
+.price-btn{
+    width: 300px;
+    height: 45px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: #532202;
+}
+.footer{
+    margin-top: 300px;
+    background-color: rgba(179, 179, 179, 0.589);
+    height: 200px;
+    /* width: 100px; */
+}
+.copyright{
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 80px;
+}
